@@ -16,9 +16,7 @@ content = urlopen(req)
 
 df = pd.read_csv(content)
 print(df.dtypes)
-# df.info()
-# print(df.head(10))
-# print(df['weight(%)'].sum())
+
 
 df1 = df[['company', 'ticker', 'weight(%)']]
 print(df1.head(20))
